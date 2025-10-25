@@ -8,119 +8,295 @@
   <link rel="icon" type="image/png" href="../assets/labxioNoframe.png" />
   <style>
     body {
-      font-family: "Inter", sans-serif;
-      background-color: #e8f4f8;
-      margin: 0;
-      color: #374151;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       line-height: 1.6;
+      color: #333;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0;
+      background-color: #e8f4f8;
+      box-sizing: border-box;
     }
-    header {
+
+    .header-bar {
+      background-color: #119a89;
+      color: #ffffff;
+      padding: 2rem 1rem;
       text-align: center;
-      padding: 40px 16px 16px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin-bottom: 1rem;
     }
-    header img {
-      width: 80px;
-      height: 80px;
-      margin-bottom: 16px;
-    }
-    h1 {
-      font-size: 28px;
+
+    .header-bar h1 {
       margin: 0;
-      color: #374151;
+      font-size: 2.5rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
     }
-    h2 {
-      color: #374151;
+
+    .version {
+      font-size: 0.9rem;
+      color: #ffffff;
+      margin-top: 0.5rem;
+      font-style: italic;
+      opacity: 0.9;
+    }
+
+    .intro-section {
+      background-color: #ffffff;
+      padding: 1.5rem;
+      margin: 0 0.75rem 1rem 0.75rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
       text-align: center;
-      margin-top: 40px;
     }
-    p {
-      max-width: 700px;
-      margin: 12px auto;
+
+    .intro-section p {
+      font-size: 1rem;
+      line-height: 1.6;
       color: #555;
+      margin: 0;
+    }
+
+    .content-container {
+      background-color: #ffffff;
+      padding: 1.5rem;
+      margin: 0 0.75rem 1rem 0.75rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    }
+
+    h2 {
+      color: #119a89;
+      font-size: 1.4rem;
+      font-weight: 600;
+      margin: 0 0 1rem 0;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid #eee;
       text-align: center;
     }
+
     .tag-container {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 8px;
-      margin: 16px 0;
+      margin: 1rem 0;
     }
+
     .tag {
-      background: #14b8a6;
+      background: #119a89;
       color: white;
-      padding: 4px 10px;
+      padding: 6px 14px;
       border-radius: 12px;
-      font-size: 13px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: background-color 0.3s ease;
     }
-    .section {
-      background: white;
-      border-radius: 16px;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-      padding: 24px;
-      max-width: 800px;
-      margin: 24px auto;
+
+    .tag:hover {
+      background: #0d7a6d;
     }
+
     ul {
       list-style: none;
       padding: 0;
+      margin: 0;
     }
+
     li {
-      margin: 8px 0;
-      display: flex;
-      align-items: flex-start;
-      gap: 8px;
+      margin: 0.75rem 0;
+      padding-left: 1.5rem;
+      position: relative;
+      font-size: 0.95rem;
+      line-height: 1.5;
+      color: #555;
     }
+
     li::before {
       content: "•";
-      color: #14b8a6;
+      color: #119a89;
       font-weight: bold;
+      font-size: 1.2rem;
+      position: absolute;
+      left: 0;
     }
+
     .notice {
-      border-left: 4px solid #ef6c00;
-      background: rgba(255,165,0,0.08);
-      padding: 12px 16px;
-      margin-top: 20px;
+      background-color: #fff3e0;
+      color: #e65100;
+      padding: 1rem;
       border-radius: 8px;
-      color: #bf5000;
-      font-size: 14px;
+      margin: 1rem 0;
+      border: 1px solid #ffcc80;
+      line-height: 1.4;
     }
-    .contact {
+
+    .notice strong {
+      display: block;
+      font-size: 1.05rem;
+      margin-bottom: 0.5rem;
+      color: #e65100;
+      font-weight: 600;
+    }
+
+    .notice p {
+      margin: 0;
+      font-size: 0.9rem;
+    }
+
+    .contact-section {
       text-align: center;
-      margin-top: 32px;
+      padding: 1rem 0;
     }
-    .contact a {
-      color: #14b8a6;
+
+    .contact-section p {
+      margin: 0.5rem 0;
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    .contact-section a {
+      color: #119a89;
       text-decoration: none;
       font-weight: 500;
+      transition: color 0.3s ease;
     }
-    footer {
+
+    .contact-section a:hover {
+      color: #0d7a6d;
+      text-decoration: underline;
+    }
+
+    .link-separator {
+      color: #999;
+      margin: 0 0.5rem;
+    }
+
+    .footer {
+      background-color: #119a89;
+      color: #ffffff;
       text-align: center;
-      font-size: 13px;
-      color: #9ca3af;
-      margin: 40px 0 20px;
+      padding: 1rem;
+      font-size: 0.85rem;
+      margin-top: 2rem;
+      border-radius: 0 0 12px 12px;
     }
-    footer a {
-      color: #14b8a6;
-      text-decoration: none;
-      margin: 0 12px;
+
+    .footer p {
+      margin: 0;
+      color: #ffffff;
+    }
+
+    /* Mobile-specific optimizations */
+    @media (max-width: 768px) {
+      .header-bar {
+        padding: 1.5rem 0.75rem;
+        margin-bottom: 0.75rem;
+      }
+
+      .header-bar h1 {
+        font-size: 2rem;
+      }
+
+      .version {
+        font-size: 0.85rem;
+      }
+
+      .intro-section,
+      .content-container {
+        padding: 1rem;
+        margin: 0 0.5rem 0.75rem 0.5rem;
+        border-radius: 8px;
+      }
+
+      .intro-section p {
+        font-size: 0.9rem;
+      }
+
+      h2 {
+        font-size: 1.25rem;
+      }
+
+      .tag {
+        font-size: 0.85rem;
+        padding: 5px 12px;
+      }
+
+      li {
+        font-size: 0.9rem;
+        padding-left: 1.2rem;
+      }
+
+      .notice {
+        padding: 0.75rem;
+      }
+
+      .notice strong {
+        font-size: 1rem;
+      }
+
+      .notice p {
+        font-size: 0.85rem;
+      }
+
+      .footer {
+        padding: 0.75rem;
+        font-size: 0.8rem;
+        margin-top: 1.5rem;
+      }
+    }
+
+    /* Extra small screens */
+    @media (max-width: 480px) {
+      .header-bar {
+        padding: 1rem 0.5rem;
+      }
+
+      .header-bar h1 {
+        font-size: 1.7rem;
+      }
+
+      .intro-section,
+      .content-container {
+        padding: 0.75rem;
+        margin: 0 0.25rem 0.5rem 0.25rem;
+      }
+
+      .intro-section p {
+        font-size: 0.85rem;
+      }
+
+      h2 {
+        font-size: 1.15rem;
+      }
+
+      .tag {
+        font-size: 0.8rem;
+        padding: 4px 10px;
+      }
+
+      li {
+        font-size: 0.85rem;
+      }
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Labxio Lite</h1>
-    <p>Version 1.0.0</p>
-  </header>
 
-  <section class="section">
+  <div class="header-bar">
+    <h1>Labxio Lite</h1>
+    <div class="version">Version 1.0.0</div>
+  </div>
+
+  <div class="intro-section">
     <p>
       <strong>Labxio Lite</strong> is your intelligent lab result companion that transforms complex medical data into clear, understandable insights. 
       Built with advanced medical logic, it empowers you to take control of your health data securely.
     </p>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="content-container">
     <h2>Covering 11 Essential Health Areas</h2>
     <div class="tag-container">
       <div class="tag">Heart Health</div>
@@ -135,9 +311,9 @@
       <div class="tag">Urine Analysis</div>
       <div class="tag">Coagulation</div>
     </div>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="content-container">
     <h2>Key Features</h2>
     <ul>
       <li>Smart lab interpretation with built-in medical logic</li>
@@ -145,28 +321,32 @@
       <li>Data privacy — your results never leave your device</li>
       <li>Educational insights for better health literacy</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="content-container">
     <h2>Medical Notice</h2>
     <div class="notice">
-      This app provides informational content only. It does not offer medical advice, diagnosis, or treatment. Always consult a healthcare professional for medical guidance.
+      <strong>Important Information</strong>
+      <p>This app provides informational content only. It does not offer medical advice, diagnosis, or treatment. Always consult a healthcare professional for medical guidance.</p>
     </div>
-  </section>
+  </div>
 
-  <section class="section contact">
+  <div class="content-container">
     <h2>Contact</h2>
-    <p>For support or inquiries, email us at:<br>
-      <a href="mailto:labxio.app@gmail.com">labxio.app@gmail.com</a>
-    </p>
-    <p>
-      <a href="https://arasholimi44.github.io/labxio-docs/labxio-lite/privacy.html">Privacy Policy</a> •
-      <a href="https://arasholimi44.github.io/labxio-docs/labxio-lite/terms.html">Terms & Conditions</a>
-    </p>
-  </section>
+    <div class="contact-section">
+      <p>For support or inquiries, email us at:</p>
+      <p><a href="mailto:labxio.app@gmail.com">labxio.app@gmail.com</a></p>
+      <p style="margin-top: 1rem;">
+        <a href="https://arasholimi44.github.io/labxio-docs/labxio-lite/privacy.html">Privacy Policy</a>
+        <span class="link-separator">•</span>
+        <a href="https://arasholimi44.github.io/labxio-docs/labxio-lite/terms.html">Terms & Conditions</a>
+      </p>
+    </div>
+  </div>
 
-  <footer>
-    © 2025 Labxio Lite. All rights reserved.
-  </footer>
+  <div class="footer">
+    <p>© 2025 Labxio Lite. All rights reserved.</p>
+  </div>
+
 </body>
 </html>
