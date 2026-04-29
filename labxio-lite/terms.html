@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Terms & Conditions - Labxio Lite</title>
-
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -13,16 +12,16 @@
       max-width: 900px;
       margin: 0 auto;
       padding: 0;
-      background-color: #e8f4f8;
+      background-color: #f9f9ff;
       box-sizing: border-box;
     }
 
     .header-bar {
-      background-color: #119a89;
+      background: linear-gradient(135deg, #1d4ed8 0%, #2563eb 100%);
       color: #ffffff;
       padding: 1.5rem 1rem;
       text-align: center;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 8px rgba(29,78,216,0.25);
       margin-bottom: 1rem;
     }
 
@@ -37,12 +36,12 @@
       margin: 0.5rem 0 0;
       font-size: 1.3rem;
       font-weight: 400;
-      color: #ffffff;
+      color: rgba(255,255,255,0.85);
     }
 
     .effective-date {
       font-size: 0.9rem;
-      color: #ffffff;
+      color: rgba(255,255,255,0.75);
       text-align: center;
       font-style: italic;
       margin-top: 0.5rem;
@@ -53,27 +52,20 @@
       padding: 1.5rem;
       margin: 0 0.75rem 1rem 0.75rem;
       border-radius: 12px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+      box-shadow: 0 4px 15px rgba(29,78,216,0.08);
     }
 
     h2, h3 {
-      color: #119a89;
+      color: #1d4ed8;
       margin-top: 2rem;
       margin-bottom: 1rem;
       padding-bottom: 0.5rem;
-      border-bottom: 1px solid #eee;
+      border-bottom: 1px solid #e7eeff;
       line-height: 1.3;
     }
 
-    h2 {
-      font-size: 1.4rem;
-      font-weight: 600;
-    }
-
-    h3 {
-      font-size: 1.2rem;
-      font-weight: 600;
-    }
+    h2 { font-size: 1.4rem; font-weight: 600; }
+    h3 { font-size: 1.2rem; font-weight: 600; }
 
     p, ul {
       margin-bottom: 1rem;
@@ -81,39 +73,21 @@
       line-height: 1.5;
     }
 
-    ul {
-      padding-left: 1.2rem;
-      list-style-type: disc;
-    }
-
-    ul li {
-      margin-bottom: 0.5rem;
-    }
-
-    ol {
-      padding-left: 1.2rem;
-    }
-
-    ol li {
-      margin-bottom: 0.5rem;
-    }
+    ul { padding-left: 1.2rem; list-style-type: disc; }
+    ul li { margin-bottom: 0.5rem; }
+    ol { padding-left: 1.2rem; }
+    ol li { margin-bottom: 0.5rem; }
 
     a {
-      color: #007bff;
+      color: #2563eb;
       text-decoration: none;
       transition: color 0.3s ease;
       word-break: break-word;
     }
 
-    a:hover {
-      color: #0056b3;
-      text-decoration: underline;
-    }
+    a:hover { color: #1d4ed8; text-decoration: underline; }
 
-    strong {
-      color: #333;
-      font-weight: normal;
-    }
+    strong { color: #333; font-weight: normal; }
 
     .medical-disclaimer {
       background-color: #fff3e0;
@@ -135,15 +109,12 @@
       padding-bottom: 0;
     }
 
-    .medical-disclaimer p {
-      font-size: 0.9rem;
-      margin-bottom: 0.75rem;
-    }
+    .medical-disclaimer p { font-size: 0.9rem; margin-bottom: 0.75rem; }
 
     .highlight-box {
-      background-color: #f7f9fc;
-      border: 1px solid #e2e8f0;
-      border-left: 5px solid #119a89;
+      background-color: #f0f4ff;
+      border: 1px solid #dbeafe;
+      border-left: 5px solid #1d4ed8;
       padding: 1rem;
       border-radius: 8px;
       margin: 1.5rem 0;
@@ -153,7 +124,7 @@
       margin-top: 0;
       padding-bottom: 0.25rem;
       border-bottom: none;
-      color: #119a89;
+      color: #1d4ed8;
       font-size: 1.1rem;
     }
 
@@ -164,7 +135,7 @@
     }
 
     .footer {
-      background-color: #119a89;
+      background: linear-gradient(135deg, #1d4ed8 0%, #2563eb 100%);
       color: #ffffff;
       text-align: center;
       padding: 1rem;
@@ -173,10 +144,7 @@
       border-radius: 0 0 12px 12px;
     }
 
-    .footer p {
-      margin: 0.5rem 0;
-      color: #ffffff;
-    }
+    .footer p { margin: 0.5rem 0; color: rgba(255,255,255,0.9); }
 
     @media (max-width: 768px) {
       .header-bar { padding: 1rem 0.75rem; margin-bottom: 0.75rem; }
@@ -187,8 +155,7 @@
       h2 { font-size: 1.25rem; margin-top: 1.5rem; }
       h3 { font-size: 1.1rem; }
       p, ul { font-size: 0.9rem; line-height: 1.4; }
-      ul { padding-left: 1rem; }
-      ol { padding-left: 1rem; }
+      ul, ol { padding-left: 1rem; }
       .medical-disclaimer { padding: 0.75rem; margin: 1rem 0; }
       .medical-disclaimer h3 { font-size: 1rem; }
       .medical-disclaimer p { font-size: 0.85rem; }
@@ -286,7 +253,7 @@
       <li><strong>Personal Use Only:</strong> The App is licensed for your personal, non-commercial, and educational use only. You may not use it for professional medical practice.</li>
       <li><strong>Age Requirement:</strong> You must be at least 18 years old to use the App. Labxio Lite is intended for adult users only.</li>
       <li><strong>Prohibited Conduct:</strong> You will not attempt to reverse engineer, decompile, modify, or create derivative works of the App. You will also not use the App for any illegal or unauthorized purpose.</li>
-      <li><strong>Review of Input Data:</strong> When you use the "Upload/Scan Lab" button to scan lab reports, you understand and agree that it is your responsibility to review and confirm the accuracy of all extracted lab values, reference ranges, and units. Optical character recognition (OCR) is not always 100% accurate, and incorrect inputs may result in misleading or incorrect interpretations. You must carefully review and correct any errors before relying on the results.</li>
+      <li><strong>Review of Input Data:</strong> When you use the "Upload/Scan Lab" button to scan lab reports, you understand and agree that it is your responsibility to review and confirm the accuracy of all extracted lab values, reference ranges, and units.</li>
     </ul>
 
     <h2>8. Data, Privacy, and Security</h2>
@@ -298,14 +265,13 @@
     </div>
 
     <h2>9. Disclaimer of Warranties</h2>
-    <p>THE APP IS PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS. LABXIO LITE AND ITS DEVELOPERS DISCLAIM ALL WARRANTIES, WHETHER EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. WE DO NOT WARRANT THAT THE APP WILL BE UNINTERRUPTED, ERROR-FREE, SECURE, OR ACCURATE IN ITS INTERPRETATIONS.</p>
+    <p>THE APP IS PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS. LABXIO LITE AND ITS DEVELOPERS DISCLAIM ALL WARRANTIES, WHETHER EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.</p>
 
     <h3>Limitations of Accuracy</h3>
-    <p>While Labxio Lite strives to provide accurate and educational interpretations of lab results based on established medical guidelines, we cannot guarantee the accuracy, completeness, or reliability of any analysis. The App relies on text recognition (OCR), user-entered data, and automated interpretation algorithms — all of which may contain errors. Potential sources of inaccuracy include, but are not limited to: incorrect data input, OCR misinterpretation, software bugs, algorithmic limitations, or flaws in the interpretation logic.</p>
-    <p>It is <strong>your responsibility to review and verify all input data</strong> and to <strong>consult with qualified healthcare professionals</strong> before relying on any interpretation. Labxio Lite assumes no liability for outcomes arising from errors or limitations in the App's functionality or analysis.</p>
+    <p>While Labxio Lite strives to provide accurate and educational interpretations of lab results, we cannot guarantee the accuracy, completeness, or reliability of any analysis. It is <strong>your responsibility to review and verify all input data</strong> and to <strong>consult with qualified healthcare professionals</strong> before relying on any interpretation.</p>
 
     <h2>10. Limitation of Liability</h2>
-    <p>TO THE MAXIMUM EXTENT PERMITTED BY LAW, LABXIO LITE AND ITS DEVELOPERS WILL NOT BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING DAMAGES FOR LOST PROFITS, DATA LOSS, OR MEDICAL COSTS, ARISING FROM YOUR USE OF THE APP. YOUR SOLE REMEDY FOR ANY DISSATISFACTION WITH THE APP IS TO STOP USING IT.</p>
+    <p>TO THE MAXIMUM EXTENT PERMITTED BY LAW, LABXIO LITE AND ITS DEVELOPERS WILL NOT BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES ARISING FROM YOUR USE OF THE APP.</p>
 
     <h2>11. Intellectual Property</h2>
     <p>All intellectual property rights in the App, including copyrights, trademarks, and all content and algorithms, are owned by Labxio Lite. You are granted a limited, non-exclusive, non-transferable license to use the App for your personal, educational use only.</p>
@@ -313,17 +279,17 @@
     <h2>12. Termination</h2>
     <ul>
       <li><strong>By You:</strong> You may terminate your use of the App at any time by uninstalling it from your device.</li>
-      <li><strong>By Us:</strong> We reserve the right to suspend or terminate your access to the App at any time and without notice if you violate these Terms or use the App in an inappropriate or unlawful manner.</li>
+      <li><strong>By Us:</strong> We reserve the right to suspend or terminate your access to the App at any time and without notice if you violate these Terms.</li>
     </ul>
 
     <h2>13. Governing Law</h2>
-    <p>These Terms are governed by the laws of the State of Indiana, USA, without regard to conflict of law principles. We aim to resolve any concerns or misunderstandings respectfully and informally whenever possible.</p>
+    <p>These Terms are governed by the laws of the State of Indiana, USA, without regard to conflict of law principles.</p>
 
     <h2>14. Terms Updates</h2>
-    <p>We may update these Terms from time to time to reflect changes in our services or legal requirements. Any updated Terms will be posted on our website. We encourage you to review the Terms periodically. Your continued use of the App after updates constitutes acceptance of the new Terms.</p>
+    <p>We may update these Terms from time to time. Any updated Terms will be posted on our website. Your continued use of the App after updates constitutes acceptance of the new Terms.</p>
 
     <h2>15. Contact Information</h2>
-    <p>For any questions or concerns about these Terms &amp; Conditions or the Labxio Lite App, please contact us at:</p>
+    <p>For any questions or concerns about these Terms &amp; Conditions, please contact us at:</p>
     <p><strong>Email:</strong> <a href="mailto:labxio.app@gmail.com">labxio.app@gmail.com</a></p>
 
     <div class="highlight-box">
